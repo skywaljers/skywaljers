@@ -39,7 +39,7 @@ jobs:
         run: pnpm docs:build
 
       - name: 验证构建目录
-        run: ls -la ${{ github.workspace }}/src/.vuepress/dist
+        run: ls -la dist
 
       - name: 部署到 GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
